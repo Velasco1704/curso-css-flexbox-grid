@@ -1,0 +1,120 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #d8d8d8;
+}
+
+.phone {
+  width: 24.375rem;
+  height: 52.75rem;
+  border: 0.5rem solid var(--phone-border);
+  border-radius: 3.5rem;
+  position: relative;
+}
+
+.phone .notch {
+  width: 7rem;
+  height: 2rem;
+  border-radius: 3rem;
+  background: var(--phone-border);
+  position: absolute;
+  top: 1rem;
+  left: calc(50% - 3.5rem);
+}
+
+.content {
+  background: var(--phone-background);
+  width: 100%;
+  height: 100%;
+  border-radius: 2.9rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.content__music-image {
+  width: 20rem;
+  margin-bottom: 5rem;
+}
+.content__music-image img {
+  border-radius: 0.3rem;
+}
+
+.content__music-info {
+  width: 100%;
+  height: auto;
+}
+
+.music-info__name {
+  font-size: 2em;
+  margin-bottom: 0.5rem;
+}
+.music-info__album-name {
+  font-size: 0.8em;
+  margin-bottom: 1rem;
+}
+
+.music-time {
+  width: 100%;
+}
+.music-time__bar-container {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.music-time__bar-container .bar-range {
+  background: var(--gray);
+  width: 17.5rem;
+  height: 0.15rem;
+  border-radius: 1rem;
+}
+.music-time__bar-container .dot-range {
+  width: 0.937rem;
+  height: 0.937rem;
+  border-radius: 50%;
+  background: var(--green);
+  position: absolute;
+  top: calc(50% - 0.468rem);
+  left: 4rem;
+}
+
+.music-time__numbers {
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music-control-panel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.music-control-panel .dot-panel {
+  cursor: pointer;
+  background: var(--green);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.music-control-panel .dot-panel--small {
+  padding: 0.75rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  background: var(--green);
+}
+.music-control-panel .dot-panel--big {
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  background: var(--green);
+}
